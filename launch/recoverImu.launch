@@ -1,0 +1,12 @@
+<launch>
+    <!-- Node Settings -->
+
+    <!-- Data rate in Hz -->
+
+    <node pkg="rec_imu" name="rec_imu" type="rec_imu" output="screen">
+	<remap from="rec_imu/Imu" to="imu/imu" />
+	<remap from="rec_imu/FilterOutput" to="imu/filter" />
+
+	<rosparam file="$(find rec_imu)/recoverImu.yaml"/>
+    </node>
+</launch>

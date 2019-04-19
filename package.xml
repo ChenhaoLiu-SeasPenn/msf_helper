@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rec_imu</name>
+  <version>0.0.1</version>
+  <description>Recover full IMU message for Microstrain 3DM-GX4-25 IMU</description>
+
+  <maintainer email="liuch13@seas.upenn.edu">Chenhao Liu</maintainer>
+
+  <author>Chenhao Liu</author>
+  <license>Apache 2</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <depend>roscpp</depend>
+  <depend>tf2_ros</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>diagnostic_updater</depend>
+  <depend>message_filters</depend>
+  <depend>imu_3dm_gx4</depend>
+
+  <export>
+  </export>
+</package>
